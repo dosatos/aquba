@@ -1,0 +1,136 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Cuban</title>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container header">
+      <div class="row" style="width: 100%; margin-right: 0; margin-left: 0">
+        <!-- logo -->
+        <div class="logo col-xs-6 col-sm-12 hidden-xs"><p>aquba</p></div><!-- adaptive question bank -->
+        <!-- level status -->
+        <div class="level col-xs-8 col-sm-3">
+          <span><strong>Level: 1. Points: 720</strong></span>
+          <br>
+          <div class="progress pbar">
+            <div class="pbar2 progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><p>320pts</p></div>
+            <div class="pbar2 progress-bar progress-bar-warning" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><p>30pts</p></div>
+          </div> <!-- progress bar -->
+        </div>
+        <div class="col-sm-1 col-xs-1"></div>
+        <!-- avatar -->
+        <div class="col-xs-2 col-sm-1 ava ava-sm visible-xs hidden-sm"><img id="avatar" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt=""></div> <!-- avatar-sm -->
+        <div class="search-holder col-xs-8 col-sm-4"><input type="text" class="search-field form-control" placeholder="Search Question"></div><!-- /.col-xs-4 -->
+        <div class="col-sm-1"></div>
+        <!-- <div class="premium-holder col-xs-4 col-sm-2"><button class="premium-button"> Premium </button></div> -->
+        <div class="logo logo-sm col-xs-4 visible-xs"><p>aquba</p></div><!-- adaptive question bank while not premim button-->
+        <div class="col-sm-2"></div> <!-- while no premium button -->
+        <div class="col-xs-2 col-sm-1 ava hidden-xs"><img id="avatar" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt=""></div> <!-- avatar -->
+      </div><!-- /.row -->
+    </div>
+  </nav>
+
+  <!-- all question content  -->
+  <div class="main-wrapper">
+    <!-- left navigation pane where student can see where he's going -->
+
+    <!-- <div class="study-navigation-wrapper hidden-xs col-sm-2">
+      <div class="section-img">
+
+      </div>
+      <div class="">
+      </div>
+
+    </div> -->
+
+    <!--  question content -->
+    <div class="question-content col-xs-12">
+      <div class="row">
+        <div class="question-header col-xs-12">
+          <div class="back-button col-xs-3"><a href=""> Back</a></div>
+          <div class="col-xs-1"></div>
+          <div class="score col-xs-4">100pts</div>
+          <div class="col-xs-1"></div>
+          <div class="history-button col-xs-3"><a href=""> History</a></div>
+          <div class="clear"></div>
+          <!-- <h2>Quadratic Equations</h2> -->
+        </div>
+        <div class="question-wrapper">
+          <!-- question: text, images, video -->
+          <div class="question col-xs-12 col-md-8 vl">
+            <!-- <Question> -->
+            <!-- <br> -->
+            <h3>Quadratic Equations</h3>
+            <p> A car averages 27 miles per gallon. If gas costs $4.04 per gallon, which of the following is closest to how much the gas would cost for this car to travel 2,727 typical miles?</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Quadratic_equation_coefficients.png/600px-Quadratic_equation_coefficients.png" alt="">
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/4Bc5-HRop5Y?ecver=2" style="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div> <!-- question -->
+          <div class="hints col-xs-12 col-md-4">
+            <hr class="hidden-md visible-xs">
+            <ul>
+              <!-- <h3>Hints</h3> -->
+              <li>
+                <button class="hint-button">
+                  <span class="hint-text"> Solution </span>
+                  <span class="hint-score-loss"> - 50pts </span>
+                </button>
+              </li>
+              <li>
+                <button class="hint-button">
+                  <span class="hint-text"> Hint 1 </span>
+                  <span class="hint-score-loss"> - 10pts </span>
+                </button>
+              </li>
+              <li>
+                <button class="hint-button">
+                  <span class="hint-text"> Hint 2 </span>
+                  <span class="hint-score-loss"> - 20pts </span>
+                </button>
+              </li>
+              <li>
+                <button class="hint-button">
+                  <span class="hint-text"> Hint 3 </span>
+                  <span class="hint-score-loss"> - 30pts </span>
+                </button>
+              </li>
+              <li>
+                <button class="hint-button">
+                  <span class="hint-text"> Hint 4 </span>
+                  <span class="hint-score-loss"> - 40pts </span>
+                </button>
+              </li>
+            </ul>
+            </div>
+
+          </div> <!-- hints -->
+
+          <!-- <hr class="col-xs-offset-1 col-xs-10">
+          <div class="submit-form col-xs-offset-3 col-xs-6">
+            <form class="quiz-form" action="/">
+              <label for="a1">Male</label>
+              <input type="radio" name="gender" id="a1" value="a2"><br>
+              <label for="a2">Female</label>
+              <input type="radio" name="gender" id="a2" value="a3"><br>
+              <label for="a3">Other</label>
+              <input type="radio" name="gender" id="a3" value="a4"><br><br>
+            </form>
+
+            <h3>Correct!</h3>
+            <p>You are solved better than 78% today</p>
+            <br>
+            <button class="solution btn btn-warning">Solution</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+</body>
+</html>
